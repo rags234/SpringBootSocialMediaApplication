@@ -37,5 +37,7 @@ public class UserResource {
 		 //to return response status 201
 		URI location=ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(savedUser.getId()).toUri();
 		 return ResponseEntity.created(location).build();
+		 
+		 ///
 	}
 }
